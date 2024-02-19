@@ -27,7 +27,10 @@ class PlanetDetailScreen extends StatelessWidget {
         ),
         body: Stack(
           children: [
-            Image.network(planet.image),
+            Hero(
+              tag: planet.name,
+              child: Image.network(planet.image),
+            ),
             SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Column(

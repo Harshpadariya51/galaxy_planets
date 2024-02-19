@@ -42,14 +42,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                 );
               },
-              child: Hero(
-                tag: planet.name,
-                child: Container(
-                  height: 210,
-                  child: PlanetCard(
-                    planets: [planet],
-                    currentIndex: index,
-                  ),
+              child: Container(
+                height: 210,
+                child: PlanetCard(
+                  planets: [planet],
+                  currentIndex: index,
                 ),
               ),
             );

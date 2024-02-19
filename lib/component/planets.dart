@@ -57,11 +57,14 @@ class PlanetCard extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      child: Image.network(
-                        planet.image,
-                        fit: BoxFit.cover,
-                        height: 150,
-                        width: 150,
+                      child: Hero(
+                        tag: planet.name,
+                        child: Image.network(
+                          planet.image,
+                          fit: BoxFit.cover,
+                          height: 150,
+                          width: 150,
+                        ),
                       ),
                     ),
                     Text(
